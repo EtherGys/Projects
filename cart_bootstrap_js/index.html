@@ -1,0 +1,91 @@
+<!-- /!\ 2 tasks -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP - Cart</title>
+
+    <!-- Task 1 -->
+    <!-- Ajouter les feuilles de styles du répertoire "assets/styles" -->
+    <link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">SuperStore</a>
+
+                <div class="collapse show navbar-collapse" id="main-menu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <div class="nav-link">
+                                <img class="cart_icon"
+     src="./img/shopping-cart-icon-illustration-free-vector.png"
+     alt="Cart icon">
+                                <strong>Mon panier</strong>
+
+                                <!-- Nombre de produits dans le panier -->
+                                <span id="products">0</span> produit(s) -
+
+                                <!-- Montant total du panier -->
+                                <span id="amount">0.00</span> &euro;
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="container">
+            <div id="catalog">
+                
+                <!-- ICI, LA LISTE DES PRODUITS -->
+
+
+                <!-- POUR INFO, LA STRUCTURE HTML DE LA VUE D'UN PRODUIT -->
+                <!-- 
+                <div class="product">
+                    <div class="flex-shrink-0"><img alt="Pâtes Torsades Turini"
+                            src="https://fd8-photos.leclercdrive.fr/image.ashx?id=2476932&amp;use=d&amp;cat=p&amp;typeid=i">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <h5>Pâtes Torsades Turini</h5>
+                        <p>Torsades Turini - 500g</p>
+                        <div class="d-flex">
+                            <div class="price me-auto">0.77 €</div>
+                            <button class="btn btn-sm btn-primary" data-id="1" data-price="0.77">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                -->
+
+            
+            </div><!-- End #catalog -->
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="text-center">
+                &copy; 2022 SuperStore
+            </div>
+        </div>
+    </footer>
+
+    <!-- Task 2 -->
+    <script src="./assets/js/script.js"></script>
+    
+</body>
+</html>

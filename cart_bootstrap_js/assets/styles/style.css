@@ -1,0 +1,26 @@
+body {
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+.main-content {
+    flex-grow:1;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.product {
+    display: flex;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: rgb(248,249,250);
+    border: 3px solid grey;
+}
+.product + .product {
+    margin-top: 2rem;
+}
+
+.product img {
+    width: 100px;
+}
+
