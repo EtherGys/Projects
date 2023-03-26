@@ -1,0 +1,25 @@
+.container {
+    margin: 10% 20% 0 20%
+}
+
+input {
+    border-radius: 5px;
+}
+
+h1 {
+    border: 3px solid rgb(40, 40, 165);
+    border-radius: 0.8rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1, button, input {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* button {
+    font-size: 1rem;
+    border: 3px solid rgb(109, 121, 175);
+    border-radius: 0.4rem;
+    background-color: rgb(109, 121, 175);
+} */
