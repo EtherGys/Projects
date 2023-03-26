@@ -1,2 +1,2 @@
 # Projects
-Small projects I'm working on
+Petits projets en Javascript.
