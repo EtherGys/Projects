@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="formbootstrap.css" rel="stylesheet"/>
+    <link href="pagessite.css" rel="stylesheet"/>
+    <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome/css/brands.css" rel="stylesheet">
+    <link href="fontawesome/css/solid.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="home.html">
+    <title>Formulaire de contact</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Formulaire</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cv.html">Curriculum Vitae</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <form>
+        <!-- ajouter champs obligatoires -->
+        <fieldset class="fieldset">
+            <legend>Formulaire de contact</legend> 
+            <!-- Prénom et Nom -->
+            <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Prénom" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nom" aria-label="Last name">
+                </div>
+              </div>
+              <!-- Nom et type de l'entreprise -->
+              <div class="row g-2">
+                <div class="col-md">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid" placeholder="Nom de votre entreprise" value="Nom de votre entreprise">
+                    <label for="floatingInputGrid">Nom de votre entreprise</label>
+                    <i class="fa-regular fa-hotel"></i>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="form-floating">
+                    <select class="form-select" id="floatingSelectGrid">
+                      <option selected>--Options--</option>
+                      <option value="1"> Entreprise individuelle</option>
+                      <option value="2">Société de personnnes</option>
+                      <option value="3">Société par actions</option>
+                    </select>
+                    <label for="floatingSelectGrid">Choisissez le type de votre entreprise</label>
+                  </div>
+                  </div>
+                  <!-- Taille de l'entreprise -->
+                  <div>
+                    <p>
+                        Choisissez la taille de votre entreprise :
+                    </p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        1 à 5 employés
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        6 à 50 employés
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Au moins 50 employés
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- Téléphone -->
+              <p>
+              <div class="col">
+                <select class="indicatif" id="indicatif" name="indicatif">
+                    <option value="fr">+33</option>
+                    <option value="be">+32</option>
+                    <label for="indicatif"></label>
+                </select>
+                <input type="tel" id="numeroTelephone" class="form-control" placeholder="Numéro de téléphone" aria-label="Numéro de téléphone">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            </p>
+
+            <!-- Adresse email -->
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Adresse email">
+                <label for="floatingInput">Adresse email</label>
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+            </div>
+            <!-- Message -->
+            <div class="mb-3 textarea">
+                <label for="exampleFormControlTextarea1" class="form-label">Message :</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+             <!-- newsletter -->     
+              <div class="form-check form-switch form-check-reverse">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckReverse">
+                <label class="form-check-label" for="flexSwitchCheckReverse">S'inscrire à la newsletter</label>
+              </div>
+            <div class="submitButton">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

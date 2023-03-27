@@ -1,0 +1,64 @@
+
+
+.mb-3, .form-floating {
+margin: auto;
+
+}
+
+.submitButton, .form-floating, .mb-3 form-check{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.form-control, .form-select, .input-group-text {
+    border-radius: 10px !important;
+}
+
+.mb-3 textarea {
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+}
+
+
+.form-select {
+    text-align: center !important;
+}
+
+.fieldset {
+    border: 2px solid rgb(112, 148, 165);
+    border-radius: 10px;
+    margin: 100px;
+    padding: 30px 30px 30px 30px;
+}
+
+.fa-phone {
+    position: relative;
+    left: 1235px;
+    bottom: 30px;
+}
+
+.fa-hotel {
+    position: relative;
+    left: 600px;
+    bottom: 40px;
+}
+
+.fa-envelope{
+    position: relative;
+    left: 1235px;
+    bottom: 40px;
+}
+
+.indicatif {
+    position: relative;
+    border: 5px;
+    background-color: white;
+    border-radius: 5px;
+    top: 31px;
+    left: 5px;
+}
+
+input[type="tel"] {
+    padding-left: 70px;
+}

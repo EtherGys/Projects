@@ -1,0 +1,16 @@
+.nav-link {
+font-size: 30px !important;
+}
+
+.navbar-brand {
+    font-size: 20px !important;
+}
+
+body {
+    background-color: rgb(223, 232, 240) !important;
+    margin: 3px;
+}
+
+.container-fluid {
+    background-color: rgb(112, 148, 165) !important;
+}
