@@ -1,0 +1,294 @@
+* {
+    --darkblue: rgb(66, 66, 95);
+    --lightblue: rgb(233, 227, 227);
+    --whitenavbar: rgb(230, 230, 230);
+}
+
+.form_container {
+    width: 50%;
+    margin-left: 25%;
+    line-height: 0.5;
+    font-size: 20px
+}
+
+.bouton {
+    border: 5px solid var(--darkblue);
+    border-radius: 100px;
+    font-size: 15px;
+    background-color: #fff;
+    color: var(--darkblue);
+    margin-left: 300px;
+    padding: 2px 7px 2px 7px;
+    margin-top: 5px;
+}
+
+.text, .type_entse, .email, .boutons {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid black;
+}
+
+.nom_entse, .type_entse {
+    margin-top: 30px;
+    margin-bottom: 40x;
+}
+
+.newsletter {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+/* .newsletter {
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+} */
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+}
+/* legend {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    
+} */
+
+/* pseudo class focus et outline none dans l'input pour avoir un effet quand on clique sur une zone à remplir dans le formulaire */
+
+textarea {
+    resize: none;
+}
+
+.entete {
+    border-radius: 15px;
+    background-color: rgb(233, 227, 227);
+}
+
+.choix_taille, .oblig {
+    font-size: 15px;
+}
+
+.type_entse {
+    padding-bottom: 20px;
+}
+
+legend {
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+/* .container input:checked ~ .checkmark:after { */
+    
+    .border_entse, .border_nom, .border_prenom, .border_tel, .border_message, .border_email {
+        border-radius: 5px;
+    }
+    
+    i {
+        position: relative;
+        left: 25px;
+        font-size: 15px;
+    }
+    
+    .border_entse, .border_tel, .border_email {
+        padding-left: 25px;
+    }
+    
+    .border_email:focus{
+        background-color: rgb(211, 205, 205);
+    }
+    
+    .border_prenom:focus{
+        background-color: rgb(211, 205, 205);
+    }
+    
+    .border_nom:focus{
+        background-color: rgb(211, 205, 205);
+    }
+    
+    
+    .border_entse:focus{
+        background-color: rgb(211, 205, 205);
+    }
+    
+    
+    .border_nom:focus{
+        background-color: rgb(211, 205, 205);
+    }
+    
+    .border_tel:focus{
+        background-color: rgb(211, 205, 205);
+    }
+    
+    @-webkit-keyframes extend {
+        0% {
+            width: 600px;
+            height: 200px;
+            border-radius: 100px;
+        } 10% {
+            width: 610px;
+            height: 210px;
+            background: #fff;
+            margin-left: - 5px;
+            margin-top: - 5px;
+        } 20% {
+            width: 600px;
+            height: 200px;
+            background: var(--darkblue);
+            margin-left: 0px;
+            margin-top: 0px;
+        } 100% {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            margin-left: 190px;
+            background: var(--darkblue);
+        }
+    }
+    @keyframes extend {
+        0% {    
+            /* position: relative;
+            width: 75px;
+            height: 30px;
+            left: 55%;
+            top: 60%;
+            margin: -75px 0 0 0 */
+            width: 75px;
+            height: 30px;
+            border-radius: 100px;
+        } 10% {
+            width: 75px;
+            height: 30px;
+            background: #ffffff;
+            margin-left: - 5px;
+            margin-top: -75px;
+        } 20% {
+            width: 75px;
+            height: 30px;
+            background: var(--darkblue);
+            margin-left: 0px;
+            margin-top: 0px;
+        } 100% {
+            width: 40px;
+            height: 40px;
+            border-radius: 100px;
+            margin-left: 40px;
+            background: var(--darkblue);
+        }
+    }
+    
+    @-webkit-keyframes disappear {
+        0% {
+            opacity: 1;
+        } 20% {
+            color: #fff;
+        } 100% {
+            opacity: 0;
+        }
+    }
+    @keyframes disappear {
+        0% {
+            opacity: 1;
+        } 20% {
+            color: #fff;
+        } 100% {
+            opacity: 0;
+        }
+    }
+    @-webkit-keyframes appear {
+        0% {
+            opacity: 0;
+        } 70% {
+            opacity: 0;
+        } 100% {
+            opacity: 1;
+        }
+    }
+    @keyframes appear {
+        0% {
+            opacity: 0;
+        } 70% {
+            opacity: 0;
+        } 100% {
+            opacity: 1;
+        }
+    }
+    html {
+        background: #fff
+    }
+    
+    input, button, submit {
+        border: none
+    }
+    
+    .cont {
+        position: relative;
+        width: 75px;
+        height: 30px;
+        left: 55%;
+        top: 60%;
+        margin: 0 -75px  0 0
+    }
+    
+    button {
+        border-width: 1px;
+        width: 75px;
+        height: 30px;
+        /*border-radius*/
+        border-radius: 100px;
+        background: #fff;
+        position: absolute;
+        border: 5px solid var(--darkblue)
+    }
+    
+    button > span {
+        font-size: 15px;
+        color: var(--darkblue);
+    }
+    
+    img {
+        position: absolute;
+        top: -5px;
+        left: -10px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+        opacity: 0
+    }
+    
+    button:focus {
+        /*animation*/
+        -webkit-animation: extend 1s ease-in-out;
+        -ms-animation: extend 1s ease-in-out;
+        animation: extend 1s ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+        /* Chrome, Safari, Opera */
+        animation-fill-mode: forwards
+    }
+    
+    button:focus > span {
+        /*animation*/
+        -webkit-animation: disappear 1s ease-in-out;
+        -ms-animation: disappear 1s ease-in-out;
+        animation: disappear 1s ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+        /* Chrome, Safari, Opera */
+        animation-fill-mode: forwards
+    }
+    
+    button:focus > img {
+        /*animation*/
+        -webkit-animation: appear 1s ease-in-out;
+        -ms-animation: appear 1s ease-in-out;
+        animation: appear 1s ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+        /* Chrome, Safari, Opera */
+        animation-fill-mode: forwards
+    }
+    
+    

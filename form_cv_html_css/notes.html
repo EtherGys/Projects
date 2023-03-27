@@ -1,0 +1,61 @@
+<table>
+    <!-- <th>titre de tableau (pas obligé de l'utilisé</th>     -->
+    <tr>
+            <!-- <td colspan="nombre de colonnes">titre qui occupe plusieurs colonnes (fusions de colonnes)</td> -->
+    </tr>
+    <tr>
+            <td>cel1</td>
+            <td>cel2</td>
+        </tr>
+    <tr>
+            <td>cel3</td>
+            <td>cel4</td>
+    </tr>
+</table>
+
+
+<form action="send.php" methode="get"></form>
+
+<fieldset>(bordure grise autour du formulaire)
+    <legend>Titre du formulaire</legend>
+
+</fieldset>
+<!-- nom, prénom, mail, numéro tel, objet, contenu du message; bouton envoyer, responsive
+champs textes : noms prénoms, mot de passe
+champs select : liste de choix
+check box: cases à cocher à choix multiples
+pour les dates : data picker
+bouton radio :  cases à cocher un seul check possible
+champs de nombres : numéro
+champs mails
+bouton submit
+bouton annuler et/ou effacer
+chaque champ du tableau peut-être considéré comme une div, un élément. pour que le formulaire se positionne bien, il doit être positionné dans une div contenaire. tous les formualires ont la fonction d'envoyer qqch. pour ça, il faut que le formulaire soit encapsulé dans un formulaire (on l'entoure de balises form. donc avant tout, on met div et form avec class). a l'intrieur de la balise form, deux attributs : attribut action= (où l'on trouve l'adresse de la page où il y aura le script de la page qui fera l'action que l'on souhaite avec le formualaire). le bouton envoyer va lire ce qu'il y a dans la balise action, et appeler la page avec le script pour lancer les données, attribut method ( 2 options : soit post, soit get. c'est la méthode d'envoi des données du formulaire vers la page de script) 
+
+<label for="nom"> prénom</label> on peut mettre des labels sur tous les éléments mais il faut qu'il y ait un "for"
+
+<textarea type="text" value="louis" name="nom"/>
+
+la plupart des champs sont des input (balise orpheline). les input ont des attributs : type (texte pour champ textes), tell (téléphone avant c'était un type number, il est assez récent), mail (pour le mail), text-area(pour le message, ce n'est pa suen balise orpheline, et prend notamment la colonne et le nombre de lignes), place under (pour le texte d'exemple avant l'écriture)
+select objet du mail : 
+<select>
+<option>option 1</option>
+<option>option 2</option>
+        <label fir="opt">options</label>
+        <select name="opt">
+</select> 
+
+<textarea cols:"20" rows="30">message</textarea>
+
+type d'entreprise : select SN, PME, etc
+bouton envoyer : <<input type="submit value="envoyer"/>
+check box : input
+<input type="text" placeholder="exemple de texte"/>
+<input type="reset" value="effacer"/>
+<input type="mail" ..."tell",...
+
+pour demain : un champ nom, prénom, nom de l'entreprise, numéro de téléphone, mail, message, sélection de choix d'objets pour son message
+sélection de choix de tailles d'entreprises, type/champ d'activité de l'entreprise, bouton envoyer, bouton effacer, petite case pour recevoir une newsletter (check box) -->
+en css, on peut appeler les label direct    
+label {
+}

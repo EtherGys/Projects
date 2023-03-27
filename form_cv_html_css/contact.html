@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Victoria Gyselynck, développeur web en blablabla noter les languages/compétences">
+    <meta name="keywords" content="développeur, web, JavaScript, nord, responsive, vue.js, ajax, jquery, angular, mobile">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="pagesite.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="contact.html">Accueil</a></li>
+            <li><a href="index.html">Curriculum Vitae</a></li>
+            <li><a href="contact.html">Me contacter</a></li>
+        </ul>
+    </nav> 
+      <!-- pour renvoyer à un endroit de la page (par exemple "revenir en haut", il faut mettre un attribut id à l'endroit où l'on veut aller et l'appeler avec href) -->
+    <div class="form_container">
+        <form action="page_script.php" method="post">
+            <!-- 2 method : get et post. Get transmet les informations en clair donc ne pas utiliser pour un formulaire, surtout si on demande un mdp ! get sera utilisé plutôt pour une recherche, des options et filtres, etc. Post transmet les informations de la même façon, mais pas en clair  -->
+            <fieldset class="entete">
+                <!-- tester différents fieldset? -->
+                <legend><h1>Me contacter</h1></legend>
+                <!-- Nom -->
+                <div class="text">
+                    <p>
+                        <label for="nom">Nom*&nbsp;:</label>
+                        <!-- le label sert aux screen readers et agrandit la zone de coche pour les personnes ayant du mal à viser de petites zones (vérifier cette deuxième partie) -->
+                        <input class="border_nom" style="width: 200px ; height: 25px;" minlength="2" maxlength="50" placeholder="Doe" type="text" id="nom"
+                            name="nom" required/>
+                        <!-- input est une balise orpheline, le / n'est pas obligatoire c'est une question d'habitude semble-t-il -->
+                        <!-- minlenght et maxlenght permettent de gérer le nombre de caractères autorisés dans les zones de textes. Essentiel pour les noms et textarea -->
+                    </p>
+                    <p>
+                        <label for="prenom">Prénom*&nbsp;:</label>
+                        <input class="border_prenom" style="width: 200px ; height: 25px;" minlength="2" maxlength="50" placeholder="John" type="text"
+                            id="prenom" name="prenom" required />
+                    </p>
+                </div>
+                <!-- Nom de l'entreprise -->
+                <div class="nom_entse">
+                    <p>
+                        <label for="entse">Nom de l'entreprise*&nbsp;:</label>
+                        <div class="icon_home">
+                            <img src="./img/building-solid.svg" alt="Image de batiment">
+                            <input class="border_entse" style="width: 200px ; height: 25px;" minlength="2" maxlength="50" placeholder="Nom de l'entreprise"
+                            type="text" id="entse" name="entse" required />
+                        <!-- required permet de rendre obligatoire la complétion d'un champ, il se note par convention à la fin d ela balise input -->
+                        <!-- on peut mettre des icons dans les input (directement dans la barre de texte), faut juste trouver comment -->
+                        </div>
+                    </p>
+                </div>
+                <!-- Taille de l'entreprise -->
+                <div class="taille_entse">
+                    <p>
+                        Taille de votre entreprise&nbsp;:
+                    </p>
+                    <p class="choix_taille">
+                        <input type="radio" id="taille_entreprise" name="taille_entreprise">
+                        <label for="taille_entreprise">1 à 5 employés</label>
+                    </p>
+                    <p class="choix_taille">
+                        <input type="radio" id="taille_entreprise" name="taille_entreprise">
+                        <label for="taille_entreprise">6 à 50 employés</label>
+                    </p>
+                    <p class="choix_taille">
+                        <input type="radio" id="taille_entreprise" name="taille_entreprise">
+                        <label for="taille_entreprise">Au moins 50 employés</label>
+                    </p>
+                </div>
+                <!-- Type d'activité -->
+                <div class="type_entse">
+                        <label for="type">Type d'activité de votre entreprise&nbsp;:</label>
+                    <select id="type_entreprise" name="type_entreprise">
+                        <option disabled>--Sélectionnez le type--</option>
+                        <!-- disabled permet ne retirer l'option désignée de la zone cliquable -->
+                        <option value="Entreprise_individuelle">Entreprise individuelle</option>
+                        <option value="Societe_personnes">Société de personnes</option>
+                        <option value="Societe_action">Société par actions</option>
+                        <label for="type_entreprise" id="type_entreprise" name="type_entreprise">Type
+                            d'entreprise</label>
+                    </select>
+                    <!-- comment faire pour que lorsqu'on recharge la page, les options se remettent sur l'option disabled? -->
+                </div>
+                <!-- Téléphone -->
+                <div class="numero">
+                    <p>
+                        <div>
+                        <label for="numero">Numéro de téléphone&nbsp;:</label>
+                        <select id="indicatif" name="indicatif">
+                            <option value="fr">+33</option>
+                            <option value="be">+32</option>
+                            <label for="indicatif"></label>
+                        </select>
+                        <img src="./img/phone-solid.svg" alt="Image de téléphone">
+                        <input class="border_tel" style="width: 200px ; height: 25px;" placeholder="Numéro de téléphone" type="tel" id="numero"
+                            name="numero" />
+                        </div>
+                        </p>
+                </div>
+                <!-- Email -->
+                <div class="email">
+                    <p>
+                        <label for="email">E-mail*&nbsp;:</label>
+                        <img src="./img/envelope-solid.svg" alt="Image de courrier">
+                        <input class="border_email" style="width: 200px ; height: 25px;" minlength="6" maxlenght="50" placeholder="john.doe@gmail.fr"
+                            type="mail" id="email" name="email" />
+                    </p>
+                </div>
+                <!-- Objet du message -->
+                <div class="message">
+                    
+                        Quel est l'objet de votre message ?
+
+                        <select id="options" name="options">
+                            <option disabled>--Objet de votre message--</option>
+                            <option value="perdu">Question</option>
+                            <option value="bot">Recrutement</option>
+                            <label for="options">options</label>
+                        </select>
+                   
+                </div>
+                <!-- Message -->
+                <div>
+                    <p>
+                        <label for="message">Votre message* :</label>
+                    </p>
+                    <p>
+                        <textarea class="border_message" maxlength="250" id="message" name="message" cols="60" rows="10"
+                            required></textarea>
+                        <!-- textarea n'admet pas de placeholder. On peut en mettre, mais ça ne fonctionne pas -->
+                    </p>
+                </div>
+                <!-- Boutons -->
+
+                <div class="cont">  
+                     <button class="btn"><span>Envoyer</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+                </div>
+                <!-- Newsletter -->
+                <div class="newsletter">
+                    <p>
+                        Pour s'inscrire à ma newsletter, cochez cette case
+                        <input type="checkbox" id="newsletter" name="newsletter" />
+                        <label for="newsletter"></label>
+
+                    </p>
+                </div>
+                <div class="oblig">
+                    <p>
+                        *Champs obligatoires
+                    </p>
+                </div>
+    </div>
+    </fieldset>
+    </form>
+    <script type="text/javascript" src="fichier.js"></script>
+</body>
+</html>

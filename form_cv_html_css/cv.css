@@ -1,0 +1,99 @@
+:root {
+    --darkblue: rgb(66, 66, 95);
+    --lightblue: rgb(233, 227, 227);
+    --whitenavbar: white;
+  }
+
+.tableaustyle {
+    border: 2px solid var(--darkblue);
+    margin: auto;
+    min-width: 600px;
+    width: 800px;
+    height: auto;
+    background-color: var(--lightblue);
+    margin-top: 125px;
+    border-radius: 15px;
+    /* background-image: url('');
+    background-size: 100%; permet de prendre un lien internet et mettre une image comme background. background-size permet de mettre l'image à l'échelle que l'on veut. Ici : tout le tableau, donc 100% */
+}
+
+tr, td {
+    text-align: center;
+}
+
+.cv {
+    font-size: 30px ;
+    background-color: var(--darkblue);
+    color:var(--whitenavbar);
+    border-radius: 15px;
+
+}
+
+
+.xp, .form, .skills, .loisirs2 {
+    text-align: left;
+    padding: 0px 10px 10px 10px;
+    
+}
+
+.skills, .loisirs {
+   width: auto;
+}
+
+.formtitle, .xptitle, .compet,.coordo {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.skills {
+    border-right: 2px solid var(--darkblue);
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.tel, .me_contacter, .mail {
+    color: var(--darkblue);
+    text-decoration: none;
+}
+
+.tel:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.me_contacter:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.mail:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.mail {
+    font-size: 15px;
+    float: right;
+}
+/* 
+.icone-linkedin {
+    width: 5px !important;
+    height: 5px !important;
+    font-size: 50% !important;
+    background-size: 5px !important;
+    text-align: center !important;
+} */
+
+.photocv:hover {
+    opacity: 50%;
+}
