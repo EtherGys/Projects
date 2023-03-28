@@ -1,2 +1,2 @@
 # Projects
-Petits projets en Javascript.
+Petits projets, principalement avec JavaScript.
